@@ -1,0 +1,8 @@
+L_Amyg	17.5	18.5
+R_Amyg	53.5	54.5
+L_Caud	10.5	11.5
+R_Caud	49.5	50.5
+L_Hipp	16.5	17.5
+R_Hipp	52.5	53.5
+L_Thal	9.5	10.5
+R_Thal	48.5	49.5
