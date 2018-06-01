@@ -1,7 +1,8 @@
 #!/bin/bash
 
 HOME=/Users/allisonjack/Documents/CDD_R01
-IDLIST=$HOME/FIRST/SHAPE_ANALYSIS/IDs_onset2_CDD_ASDR.txt
+LABEL=your_label
+IDLIST=$HOME/FIRST/SHAPE_ANALYSIS/IDs_${LABEL}.txt
 
 for ROI in L_Thal R_Thal L_Amyg R_Amyg L_Caud R_Caud L_Hipp R_Hipp; do
 
@@ -17,7 +18,7 @@ for ROI in L_Thal R_Thal L_Amyg R_Amyg L_Caud R_Caud L_Hipp R_Hipp; do
   OUTDIR=$HOME/FIRST/SHAPE_ANALYSIS
   mkdir -p $OUTDIR
 
-  concat_bvars $OUTDIR/${ROI}_onset2_CDD_ASDR.bvars $BVARSIN
+  concat_bvars $OUTDIR/${ROI}_${LABEL}.bvars $BVARSIN
 
   rm *tmp*
 done
