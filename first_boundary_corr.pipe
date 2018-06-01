@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline version=".2">
+        <connections>
+                <connection source="IDs_1.Output" sink="first_boundary_corr_1.ID" />
+                <connection source="ROI_1.Output" sink="first_boundary_corr_1.ROI" />
+        </connections>
+        <moduleGroup id="Untitled_1" name="Untitled" posX="0" posY="0" sourceCode="">
+                <module id="first_boundary_corr_1" name="first_boundary_corr" posX="282" posY="253" sourceCode="" location="pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SCRIPTS/first_boundary_corr.sh">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:52:31 EST 2018" />
+                        </metadata>
+                        <input id="first_boundary_corr_1.FIRSTDIR" name="FIRSTDIR" required="true" enabled="true" order="0" prefix="-F" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>/ifshome/ajack/REGRESS/FIRST</value>
+                                </values>
+                        </input>
+                        <input id="first_boundary_corr_1.ID" name="ID" required="true" enabled="true" order="1" prefix="-I" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                        <input id="first_boundary_corr_1.ROI" name="ROI" required="true" enabled="true" order="2" prefix="-R" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                        <input id="first_boundary_corr_1.METHOD" name="METHOD" required="true" enabled="true" order="3" prefix="-B" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>fast</value>
+                                </values>
+                        </input>
+                </module>
+                <dataModule id="ROI_1" name="ROI" posX="352" posY="73" sourceCode="" type="String" source="true" loopIndex="false">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 13:13:33 EST 2018" />
+                        </metadata>
+                        <output id="ROI_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>L_Amyg</value>
+                        </values>
+                </dataModule>
+                <dataModule id="IDs_1" name="IDs" posX="248" posY="74" sourceCode="" type="String" source="true" loopIndex="false" serverAddress="localhost">
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:54:27 EST 2018" />
+                        </metadata>
+                        <output id="IDs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>1097.01</value>
+                                <value>2147.04</value>
+                                <value>2268.03</value>
+                                <value>8123.02</value>
+                                <value>8316.03</value>
+                                <value>9015.03</value>
+                                <value>9022.03</value>
+                                <value>9030.03</value>
+                                <value>9515.03</value>
+                                <value>9590.03</value>
+                                <value>10101.03</value>
+                                <value>10244.03</value>
+                        </values>
+                </dataModule>
+                <annotations visible="true">
+                        <annotation width="200" height="100" posX="538" posY="78" background="255,255,153,100" foreground="0,0,0,255" expanded="true" type="text" name="ROI            Method&#xA;&#xA;L/R Accu    fast&#xA;L/R Amyg   fast&#xA;L/R Caud    fast&#xA;L/R Hipp     fast&#xA;L/R Pall       none&#xA;L/R Puta     none&#xA;L/R Thal     none&#xA;BrStem      fast">
+                                <styles>
+                                        <style name="ROI            Method&#xA;&#xA;L/R Accu    fast&#xA;L/R Amyg   fast&#xA;L/R Caud    fast&#xA;L/R Hipp     fast&#xA;L/R Pall       none&#xA;L/R Puta     none&#xA;L/R Thal     none&#xA;BrStem      fast$0" fontSize="11" />
+                                </styles>
+                        </annotation>
+                </annotations>
+        </moduleGroup>
+</pipeline>
+

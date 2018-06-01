@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline version=".2">
+        <connections>
+                <connection source="IDs_1.Output" sink="run_first_2.ID" />
+                <connection source="ROI_1.Output" sink="run_first_2.ROI" />
+        </connections>
+        <moduleGroup id="run_first_1" name="run_first" posX="0" posY="0" sourceCode="">
+                <dataModule id="IDs_1" name="IDs" posX="164" posY="54" sourceCode="" type="String" source="true" loopIndex="false" serverAddress="localhost">
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:54:27 EST 2018" />
+                        </metadata>
+                        <output id="IDs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>1097.01</value>
+                                <value>2147.04</value>
+                                <value>2268.03</value>
+                                <value>8123.02</value>
+                                <value>8316.03</value>
+                                <value>9015.03</value>
+                                <value>9022.03</value>
+                                <value>9030.03</value>
+                                <value>9515.03</value>
+                                <value>9590.03</value>
+                                <value>10101.03</value>
+                                <value>10244.03</value>
+                        </values>
+                </dataModule>
+                <module id="run_first_2" name="run_first" posX="198" posY="233" sourceCode="" location="pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SCRIPTS/run_first.sh">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:52:31 EST 2018" />
+                        </metadata>
+                        <input id="run_first_2.FIRSTDIR" name="FIRSTDIR" required="true" enabled="true" order="0" prefix="-F" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>/ifshome/ajack/REGRESS/FIRST</value>
+                                </values>
+                        </input>
+                        <input id="run_first_2.ID" name="ID" required="true" enabled="true" order="1" prefix="-I" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                        <input id="run_first_2.ROI" name="ROI" required="true" enabled="true" order="2" prefix="-R" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                        <input id="run_first_2.NMODES" name="NMODES" required="true" enabled="true" order="3" prefix="-N" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="Number" cardinality="1" />
+                                <values>
+                                        <value>80</value>
+                                </values>
+                        </input>
+                </module>
+                <dataModule id="ROI_1" name="ROI" posX="268" posY="53" sourceCode="" type="String" source="true" loopIndex="false">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 13:13:33 EST 2018" />
+                        </metadata>
+                        <output id="ROI_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>L_Amyg</value>
+                        </values>
+                </dataModule>
+                <annotations visible="true">
+                        <annotation width="200" height="100" posX="453" posY="59" background="255,255,153,100" foreground="0,0,0,255" expanded="true" type="text" name="ROI            # Modes&#xA;&#xA;L/R Accu    50&#xA;L/R Amyg   80&#xA;L/R Caud    40&#xA;L/R Hipp     30&#xA;L/R Pall       40&#xA;L/R Puta     40&#xA;L/R Thal     40&#xA;BrStem       90">
+                                <styles>
+                                        <style name="ROI            # Modes&#xA;&#xA;L/R Accu    50&#xA;L/R Amyg   80&#xA;L/R Caud    40&#xA;L/R Hipp     30&#xA;L/R Pall       40&#xA;L/R Puta     40&#xA;L/R Thal     40&#xA;BrStem       90$0" fontSize="11" />
+                                </styles>
+                        </annotation>
+                </annotations>
+        </moduleGroup>
+</pipeline>
+

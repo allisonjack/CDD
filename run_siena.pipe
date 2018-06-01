@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline version=".2">
+        <connections>
+                <connection source="inputs_1.Output" sink="runsienax_1.INPUT" />
+                <connection source="outputs_1.Output" sink="runsienax_1.OUTPUT" />
+        </connections>
+        <moduleGroup id="Untitled_1" name="Untitled" posX="0" posY="0" sourceCode="">
+                <module id="runsienax_1" name="run sienax" posX="434" posY="317" sourceCode="" location="pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SCRIPTS/run_sienax.sh">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Thu Feb 08 16:49:23 EST 2018" />
+                        </metadata>
+                        <input id="runsienax_1.INPUT" name="INPUT" required="true" enabled="true" order="0" prefix="-I" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </input>
+                        <input id="runsienax_1.OUTPUT" name="OUTPUT" required="true" enabled="true" order="1" prefix="-O" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                </module>
+                <dataModule id="inputs_1" name="inputs" posX="344" posY="105" sourceCode="" type="File" source="true" loopIndex="false" serverAddress="cranium.loni.usc.edu">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Thu Feb 08 16:50:23 EST 2018" />
+                        </metadata>
+                        <output id="inputs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </output>
+                        <fileTypes>
+                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                        </fileTypes>
+                        <values>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/3812.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9239.04_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/10040.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/8321.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9074.04_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/10101.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/1097.01_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/2147.04_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9515.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9590.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/8113.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/8064.07_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9977.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9374.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/9486.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/8123.02_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/3839.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/CE1388_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/7984.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/CE10168.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/8237.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/CE10650.03_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/SCR79003_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL51503_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL53003_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL53403_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL53903_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL55403_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/YAL22803_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL51903_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL54003_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/SCR74603_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL52703_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL55103_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/HAR35104_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL52403_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL56203_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/SCR73403_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/SCR78004_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/HAR31503_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/UCL50003_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/YAL11403_anat.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SIENAX/YAL828003_anat.nii.gz</value>
+                        </values>
+                </dataModule>
+                <dataModule id="outputs_1" name="outputs" posX="553" posY="159" sourceCode="" type="String" source="true" loopIndex="false" serverAddress="cranium.loni.usc.edu">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Thu Feb 08 16:50:23 EST 2018" />
+                        </metadata>
+                        <output id="outputs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/3812.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9239.04_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/10040.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/8321.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9074.04_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/10101.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/1097.01_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/2147.04_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9515.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9590.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/8113.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/8064.07_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9977.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9374.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/9486.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/8123.02_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/3839.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/CE1388_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/7984.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/CE10168.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/8237.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/CE10650.03_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/SCR79003_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL51503_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL53003_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL53403_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL53903_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL55403_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/YAL22803_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL51903_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL54003_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/SCR74603_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL52703_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL55103_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/HAR35104_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL52403_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL56203_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/SCR73403_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/SCR78004_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/HAR31503_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/UCL50003_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/YAL11403_sienax</value>
+                                <value>/ifshome/ajack/REGRESS/SIENAX/YAL828003_sienax</value>
+                        </values>
+                </dataModule>
+        </moduleGroup>
+</pipeline>
+

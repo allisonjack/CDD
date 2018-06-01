@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline version=".2">
+        <connections>
+                <connection source="Inputs_1.Output" sink="first_randomise_1.Input" />
+                <connection source="Masks_1.Output" sink="first_randomise_1.Mask" />
+                <connection source="Outputbasenames_1.Output" sink="first_randomise_1.Outputbasename" />
+        </connections>
+        <moduleGroup id="first_randomise_loni_1" name="first_randomise_loni" posX="0" posY="0" sourceCode="" recordsWorkflow="true">
+                <metadata>
+                        <data key="__creationDateKey" value="" />
+                </metadata>
+                <module id="first_randomise_1" name="first_randomise" posX="301" posY="240" sourceCode="" location="pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SCRIPTS/first_randomise.sh">
+                        <metadata>
+                                <data key="__creationDateKey" value="Wed Jan 10 11:38:30 EST 2018" />
+                        </metadata>
+                        <input id="first_randomise_1.Input" name="Input" required="true" enabled="true" order="0" prefix="-I" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </input>
+                        <input id="first_randomise_1.Mask" name="Mask" required="true" enabled="true" order="1" prefix="-M" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </input>
+                        <input id="first_randomise_1.Outputbasename" name="Output basename" required="true" enabled="true" order="2" prefix="-O" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                        <input id="first_randomise_1.Designbasename" name="Design basename" required="true" enabled="true" order="3" prefix="-D" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>all</value>
+                                </values>
+                        </input>
+                        <input id="first_randomise_1.Rootdirectory" name="Root directory" required="true" enabled="true" order="4" prefix="-R" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>/ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS</value>
+                                </values>
+                        </input>
+                </module>
+                <dataModule id="Inputs_1" name="Inputs" posX="204" posY="81" sourceCode="" type="File" source="true" loopIndex="false" serverAddress="cranium.loni.usc.edu">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Wed Jan 10 11:50:51 EST 2018" />
+                        </metadata>
+                        <output id="Inputs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </output>
+                        <fileTypes>
+                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                        </fileTypes>
+                        <values>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Thal_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Amyg_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Caud_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Hipp_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Thal_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Amyg_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Caud_all_MNI.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Hipp_all_MNI.nii.gz</value>
+                        </values>
+                </dataModule>
+                <dataModule id="Masks_1" name="Masks" posX="333" posY="27" sourceCode="" type="File" source="true" loopIndex="false" serverAddress="cranium.loni.usc.edu">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Wed Jan 10 11:50:51 EST 2018" />
+                        </metadata>
+                        <output id="Masks_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="File" cardinality="1">
+                                        <fileTypes>
+                                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                                        </fileTypes>
+                                </format>
+                        </output>
+                        <fileTypes>
+                                <filetype name="NIFTI GZ" extension="nii.gz" description="Gzipped NIFTI file." />
+                        </fileTypes>
+                        <values>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Thal_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Amyg_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Caud_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/L_Hipp_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Thal_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Amyg_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Caud_all_MNI_mask.nii.gz</value>
+                                <value>pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/ACE_FIRST/SHAPE_ANALYSIS/R_Hipp_all_MNI_mask.nii.gz</value>
+                        </values>
+                </dataModule>
+                <dataModule id="Outputbasenames_1" name="Output basenames" posX="396" posY="88" sourceCode="" type="String" source="true" loopIndex="false">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Wed Jan 10 11:55:04 EST 2018" />
+                        </metadata>
+                        <output id="Outputbasenames_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>L_Thal_all_MNI_T2</value>
+                                <value>L_Amyg_all_MNI_T2</value>
+                                <value>L_Caud_all_MNI_T2</value>
+                                <value>L_Hipp_all_MNI_T2</value>
+                                <value>R_Thal_all_MNI_T2</value>
+                                <value>R_Amyg_all_MNI_T2</value>
+                                <value>R_Caud_all_MNI_T2</value>
+                                <value>R_Hipp_all_MNI_T2</value>
+                        </values>
+                </dataModule>
+        </moduleGroup>
+</pipeline>
+

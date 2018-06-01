@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline version=".2">
+        <connections>
+                <connection source="IDs_1.Output" sink="run_first_all_1.ID" />
+        </connections>
+        <moduleGroup id="Untitled_1" name="Untitled" posX="0" posY="0" sourceCode="">
+                <module id="run_first_all_1" name="run_first_all" posX="276" posY="201" sourceCode="" location="pipeline://cranium.loni.usc.edu//ifshome/ajack/REGRESS/SCRIPTS/run_first_all_loni.sh">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:52:31 EST 2018" />
+                        </metadata>
+                        <input id="run_first_all_1.FIRSTDIR" name="FIRSTDIR" required="true" enabled="true" order="0" prefix="-F" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                                <values>
+                                        <value>/ifshome/ajack/REGRESS/FIRST</value>
+                                </values>
+                        </input>
+                        <input id="run_first_all_1.ID" name="ID" required="true" enabled="true" order="1" prefix="-I" prefixSpaced="true" prefixAllArgs="false">
+                                <format type="String" cardinality="1" />
+                        </input>
+                </module>
+                <dataModule id="IDs_1" name="IDs" posX="308" posY="79" sourceCode="" type="String" source="true" loopIndex="false" serverAddress="localhost">
+                        <tag />
+                        <metadata>
+                                <data key="__creationDateKey" value="Tue Jan 02 10:54:27 EST 2018" />
+                        </metadata>
+                        <output id="IDs_1.Output" name="Output" required="true" enabled="true" order="-1">
+                                <format type="String" cardinality="1" />
+                        </output>
+                        <values>
+                                <value>1097.01</value>
+                                <value>2147.04</value>
+                                <value>2268.03</value>
+                                <value>8123.02</value>
+                                <value>8316.03</value>
+                                <value>9015.03</value>
+                                <value>9022.03</value>
+                                <value>9030.03</value>
+                                <value>9515.03</value>
+                                <value>9590.03</value>
+                                <value>10101.03</value>
+                                <value>10244.03</value>
+                        </values>
+                </dataModule>
+        </moduleGroup>
+</pipeline>
+
