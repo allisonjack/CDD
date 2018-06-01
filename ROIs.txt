@@ -1,0 +1,8 @@
+L_Amyg
+R_Amyg
+L_Caud
+R_Caud
+L_Hipp
+R_Hipp
+L_Thal
+R_Thal
